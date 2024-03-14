@@ -1,3 +1,4 @@
+ MongoDBConnection
 require('dotenv').config();
 const express=require('express');
 const mongoose=require('mongoose');
@@ -22,3 +23,20 @@ app.get('/',(req,res)=>{
 app.listen(port,()=>{
     console.log(`Server is running on port ${port}`);
 });
+=======
+const express = require('express');
+const app = express();
+
+app.get('/ping',(req,res) =>{
+  try{
+    return res.send('pong')
+  }catch (error) {
+    console.error('Error handling request:', error);
+  }
+})
+
+app.listen(3000,() =>{
+    console.log(`server running on port 3000`)
+});
+
+ main
