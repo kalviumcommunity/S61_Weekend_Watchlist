@@ -6,3 +6,10 @@ Looking for the perfect way to unwind and enjoy some quality time over the weeke
 ## Features
 - *Curated List*: Explore a curated list of movies spanning various genres.
 - *Search Functionality*: Easily find specific movies using the search feature.
+
+ MongoDBConnection
+#render Deployed link: https://s61-weekend-watchlist.onrender.com
+
+### Deployment Link:
+https://s61-weekend-watchlist-1.onrender.com/ping
+main
