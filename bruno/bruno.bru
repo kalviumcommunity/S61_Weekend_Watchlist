@@ -4,8 +4,20 @@ meta {
   seq: 1
 }
 
-get {
-  url: https://s61-weekend-watchlist-1.onrender.com/ping
-  body: none
+put {
+  url: http://localhost:3001/api/update/65f7c91b3cd0d45e402a6762
+  body: json
   auth: none
+}
+
+body:json {
+  {
+      "title": "The Godfather",
+      "genres": ["Crime", "Drama"],
+      "year": 1942,
+      "director": "Francis Ford Coppola",
+      "cast": ["Marlon Brando", "Al Pacino", "James Caan"],
+      "rating": 9.2,
+      "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+    }
 }
