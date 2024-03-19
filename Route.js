@@ -1,5 +1,5 @@
 const {MovieModel} = require('./models/movie.model.js')
-const { Router, application } = require("express");
+const { Router } = require("express");
 
 const MovieRoute = Router();
 
