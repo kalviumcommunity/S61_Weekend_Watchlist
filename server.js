@@ -6,7 +6,6 @@ connectDB();
 const app = express();
 const port = 3001;
 
- Endpoint
 app.get('/ping',(req,res) =>{
   try{
     return res.send('pong')
@@ -32,15 +31,10 @@ app.get('/opp',(req,res) =>{
 app.use(express.json());
 
 
-app.use('/api', routes); 
-
-
-
+app.use("/api", MovieRoute);
 app.get("/", (req, res) => {
   res.send("pong");
 });
-
-app.use("/api", MovieRoute);
 
 app.listen(port, () => {
   console.log("Server is running");
