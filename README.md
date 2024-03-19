@@ -13,3 +13,6 @@ Looking for the perfect way to unwind and enjoy some quality time over the weeke
 ### Deployment Link:
 https://s61-weekend-watchlist-1.onrender.com/ping
 main
+
+### Front-END Deployment Link: 
+https://weekend-watchlist.vercel.app/
