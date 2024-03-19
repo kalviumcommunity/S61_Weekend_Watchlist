@@ -26,7 +26,7 @@ app.get('/opp',(req,res) =>{
     console.error('Error handling request:', error);
   }
 })
-=======
+
 app.use(express.json());
 app.use('/api', routes); 
 main
