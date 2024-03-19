@@ -15,4 +15,4 @@ https://s61-weekend-watchlist-1.onrender.com/ping
 main
 
 ### Front-END Deployment Link: 
-https://weekend-watchlist.vercel.app/
+[Deployed-Link](https://weekend-watchlist.vercel.app/)
