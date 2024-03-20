@@ -4,9 +4,9 @@ import React from 'react'
 function Movie(props) {
   return (
     <div>
-        <h1>Movie Title : {props.title}</h1>
-        <h1>Description : {props.description}</h1>
-      <h1>Priority : {props.priority}</h1>
+        <h2>Movie Title : {props.title}</h2>
+        <h2>Description : {props.description}</h2>
+      <h2>Priority : {props.priority}</h2>
     </div>
   )
 }

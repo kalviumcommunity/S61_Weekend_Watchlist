@@ -4,5 +4,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-font-size: larger;
 }
+.navigation-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+.nav-options li{
+    display: inline;
+margin-right: 20px;    
+
+}
+.nav-options li a {
+    text-decoration: none; 
+  }
