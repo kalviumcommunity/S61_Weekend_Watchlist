@@ -1,0 +1,210 @@
+meta {
+  name: Getting data
+  type: http
+  seq: 2
+}
+
+delete {
+  url: http://localhost:3002/api/delete
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "movieTitle": "The Godfather",
+      "genre": [
+        "Crime",
+        "Thriller"
+      ],
+      "releaseYear": 1972,
+      "director": "Francis Ford Coppola",
+      "mainCast": [
+        "Marlon Brando",
+        "Al Pacino",
+        "James Caan"
+      ],
+      "imdbRating": 9.2,
+      "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+    },
+    {
+      "movieTitle": "The Matrix",
+      "genre": [
+        "Action",
+        "Sci-Fi"
+      ],
+      "releaseYear": 1999,
+      "director": "Lana Wachowski, Lilly Wachowski",
+      "mainCast": [
+        "Keanu Reeves",
+        "Laurence Fishburne"
+      ],
+      "imdbRating": 8.7,
+      "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers."
+    },
+    {
+      "movieTitle": "Schindler's List",
+      "genre": [
+        "Biography",
+        "Drama",
+        "History"
+      ],
+      "releaseYear": 1993,
+      "director": "Steven Spielberg",
+      "mainCast": [
+        "Liam Neeson",
+        "Ben Kingsley",
+        "Ralph Fiennes"
+      ],
+      "imdbRating": 8.9,
+      "description": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis."
+    },
+    {
+      "movieTitle": "The Lord of the Rings: The Fellowship of the Ring",
+      "genre": [
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
+      "releaseYear": 2001,
+      "director": "Peter Jackson",
+      "mainCast": [
+        "Elijah Wood",
+        "Ian McKellen",
+        "Orlando Bloom"
+      ],
+      "imdbRating": 8.8,
+      "description": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron."
+    },
+    {
+      "movieTitle": "Goodfellas",
+      "genre": [
+        "Biography",
+        "Crime",
+        "Drama"
+      ],
+      "releaseYear": 1990,
+      "director": "Martin Scorsese",
+      "mainCast": [
+        "Robert De Niro",
+        "Ray Liotta",
+        "Joe Pesci"
+      ],
+      "imdbRating": 8.7,
+      "description": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate."
+    },
+    {
+      "movieTitle": "Once upon a time... in Hollywood",
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
+      "releaseYear": 2019,
+      "director": "Quentin Tarantino",
+      "mainCast": [
+        "Leonardo DiCaprio",
+        "Brad pitt",
+        "Margot robbie"
+      ],
+      "imdbRating": 7.6,
+      "description": "A faded television actor and his stunt double strive to achieve fame and success in the final years of Hollywood's Golden Age in 1969 Los Angeles"
+    },
+    {
+      "movieTitle": "BlackSwan",
+      "genre": [
+        "Drama",
+        "Thriller"
+      ],
+      "releaseYear": 2010,
+      "director": "Darraen Aronafsky",
+      "mainCast": [
+        "Natalie Portman",
+        "Mila Kunis",
+        "Vincent Cassel"
+      ],
+      "imdbRating": 8,
+      "description": "Nina is a talented but unstable ballerina on the verge of stardom. Pushed to the breaking point by her artistic director and a seductive rival, Nina's grip on reality slips, plunging her into a waking nightmare."
+    },
+    {
+      "movieTitle": "Mulholland Drive",
+      "genre": [
+        "Drama",
+        "Thriller",
+        "Mystery"
+      ],
+      "releaseYear": 2001,
+      "director": "David Lynch",
+      "mainCast": [
+        "Naomi Watts",
+        "Laura Harrang",
+        "Justin Theroux"
+      ],
+      "imdbRating": 7.9,
+      "description": "After a car wreck on the winding Mulholland Drive renders a woman amnesiac, she and a perky Hollywood-hopeful search for clues and answers across Los Angeles in a twisting venture beyond dreams and reality."
+    },
+    {
+      "movieTitle": "Pulp Fiction",
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "releaseYear": 1994,
+      "director": "Quentin Tarantino",
+      "mainCast": [
+        "John Travolta",
+        "Uma Thurman",
+        "Samuel L. Jackson"
+      ],
+      "imdbRating": 8.9,
+      "description": "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption."
+    },
+    {
+      "movieTitle": "The Shawshank Redemption",
+      "genre": [
+        "Drama"
+      ],
+      "releaseYear": 1994,
+      "director": "Frank Darabont",
+      "mainCast": [
+        "Tim Robbins",
+        "Morgan Freeman"
+      ],
+      "imdbRating": 9.3,
+      "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+    },
+    {
+      "movieTitle": "The Dark Knight",
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "releaseYear": 2008,
+      "director": "Christopher Nolan",
+      "mainCast": [
+        "Christian Bale",
+        "Heath Ledger",
+        "Aaron Eckhart"
+      ],
+      "imdbRating": 9,
+      "description": "When the menace known as The Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice."
+    },
+    {
+      "movieTitle": "Titanic",
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
+      "releaseYear": 1997,
+      "director": "James Cameron",
+      "mainCast": [
+        "Leonardo DiCaprio",
+        "Kate Winslet"
+      ],
+      "imdbRating": 7.8,
+      "description": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic."
+    }]
+   
+  
+}
