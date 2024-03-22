@@ -4,20 +4,30 @@ meta {
   seq: 1
 }
 
-put {
-  url: http://localhost:3001/api/delete/65f95027a0406bddf5430d5c
+post {
+  url: http://localhost:3002/api/create
   body: json
   auth: none
 }
 
 body:json {
-  {
-      "title": "The Godfather",
-      "genres": ["Crime", "Drama"],
-      "year": 1942,
-      "director": "Francis Ford Coppola",
-      "cast": ["Marlon Brando", "Al Pacino", "James Caan"],
-      "rating": 9.2,
-      "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+  [
+    {
+      "movieTitle": "Inception",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "releaseYear": 2010,
+      "director": "Christopher Nolan",
+      "mainCast": [
+        "Leonardo DiCaprio",
+        "Joseph Gordon-Levitt",
+        "Ellen Page"
+      ],
+      "imdbRating": 8.8,
+      "description": "A thief who enters the dreams of others to steal secrets from their subconscious is given the inverse task of planting an idea into the mind of a CEO."
     }
+  ]
 }
