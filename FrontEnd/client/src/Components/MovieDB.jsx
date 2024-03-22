@@ -26,7 +26,7 @@ function MovieDB() {
         <ul>
           {movies.map(movie => (
             <div key={movie._id}>
-              <ul key={movie._id}> {/* Add key prop here */}
+              <ul key={movie._id}> 
                 <li>
                   <p>Movie Title: {movie.movieTitle}</p>
                   <p>Genre: {movie.genre ? movie.genre.join(', ') : 'N/A'}</p>
