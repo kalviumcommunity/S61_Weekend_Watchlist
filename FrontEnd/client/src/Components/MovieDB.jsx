@@ -1,7 +1,8 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect } from 'react';
 import axios from 'axios';
-
+import { Link } from 'react-router-dom';
+import './MovieDB.css';
 function MovieDB() {
   const [movies, setMovies] = useState([]);
 
@@ -15,17 +16,29 @@ function MovieDB() {
         console.log('Error fetching movies:', error);
       });
   }, []);
+  const handleDelete = (id) => {
+    // Implement delete logic here
+    axios.delete(`http://localhost:3002/api/delete/${id}`)
+      .then(response => {
+        // Update entities state after deletion
+        setMovies(movies.filter(entity => entity._id !== id));
+        console.log('Entity deleted successfully:', response.data);
+      })
+      .catch(error => {
+        console.log('Error deleting entity:', error);
+      });
+  };
 
   return (
     <div>
-      <h1 className='div'>All Movies</h1>
+      <h1 className='div m-3'>All Movies</h1>
 
       {movies.length === 0 ? (
         <p>No movies to display</p>
       ) : (
         <ul>
           {movies.map(movie => (
-            <div key={movie._id}>
+            <div className='container' key={movie._id}>
               <ul key={movie._id}> 
                 <li>
                   <p>Movie Title: {movie.movieTitle}</p>
@@ -36,6 +49,10 @@ function MovieDB() {
                   <p>IMDb Rating: {movie.imdbRating}</p>
                   <p>Description: {movie.description}</p>
                 </li>
+                <div className="list-item-buttons">
+                <Link to={`/update/${movie._id}`} className='btn m-3'>Update</Link>
+                <button className="btn m-3" onClick={() => handleDelete(movie._id)}>Delete</button>
+                </div>
               </ul>
             </div>
           ))}
