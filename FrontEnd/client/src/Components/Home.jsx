@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 export default function Home() {
   return (
     <>
-    <h1 className='text-dark'>Welcome to Weekend Watchlist</h1>
+    <h1 className='text-dark home'>Welcome to Weekend Watchlist</h1>
     </>
   )
 }
