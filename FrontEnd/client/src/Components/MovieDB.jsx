@@ -40,6 +40,7 @@ function MovieDB() {
   return (
     <div>
       <h1 className='div m-3'>All Movies</h1>
+
       {movies.length === 0 ? (
         <p>No movies to display</p>
       ) : (
@@ -59,7 +60,6 @@ function MovieDB() {
                 <div className="list-item-buttons">
                 {/* <Link to={`/update/${movie._id}`}  className='btn m-3'>Update</Link> */}
                 <button className="btn m-3" onClick={() => handleUpdate(movie)}>Edit</button>
-
                 <button className="btn m-3" onClick={() => handleDelete(movie._id)}>Delete</button>
                 </div>
               </ul>

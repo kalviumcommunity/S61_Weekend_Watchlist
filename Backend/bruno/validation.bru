@@ -1,0 +1,24 @@
+meta {
+  name: validation
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3002/api/create
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "movieTitle": "The Shawshank Redemption",
+    "genre": ["Drama"],
+    "releaseYear": 1700,
+    "director": "Frank Darabont",
+    "mainCast": ["Tim Robbins", "Morgan Freeman"],
+    "imdbRating": 9.3,
+    "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+  }
+  
+}

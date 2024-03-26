@@ -1,7 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { useNavigate } from "react-router-dom";
+
 function AddEntityForm() {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     movieTitle: '',
     genre: '',
@@ -49,8 +53,8 @@ function AddEntityForm() {
         description: ''
       });
       
-      // Redirect or update the UI as needed
-    } catch (error) {
+      navigate('/movies');
+        } catch (error) {
       console.error('Error adding movie:', error.message);
     }
   };
