@@ -56,8 +56,10 @@ function AddEntityForm() {
   };
 
   return (
+    <>
+    <h2 className='text-center m-3'>Add Movie</h2>
     <div className="container">
-      <h2 className='text-center'>Add Movie</h2>
+      
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label className="form-label">Movie Title:</label>
@@ -90,6 +92,7 @@ function AddEntityForm() {
         <button type="submit" className="btn btn-secondary">Submit</button>
       </form>
     </div>
+    </>
   );
 }
 

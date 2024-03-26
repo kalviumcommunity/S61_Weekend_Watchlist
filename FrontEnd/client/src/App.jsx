@@ -6,8 +6,6 @@ import AddEntityForm from './Components/AddEntityForm'; // Import the new compon
 import './App.css';
 import UpdateUser from './Components/UpdateUser';
 
-
-
 function App() {
   return (
     <>
@@ -16,6 +14,7 @@ function App() {
      <li><Link to='/'>HOME</Link></li> 
      <li> <Link to='/movies'>MOVIESWATCHLIST</Link></li>
      <li><Link to='/add-entity'>ADD ENTITY</Link></li>
+     {/* <li><Link to={`/update/:id`}>UPDATE-DELETE</Link></li> */}
     </ul>
     </div>
     <Routes>
