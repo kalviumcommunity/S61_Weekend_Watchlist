@@ -1,10 +1,12 @@
 // eslint-disable-next-line no-unused-vars
 import React, {useState, useEffect } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import './MovieDB.css';
 function MovieDB() {
   const [movies, setMovies] = useState([]);
+  const navigate = useNavigate();
+
 
   useEffect(() => {
     axios.get('http://localhost:3002/api/read')
@@ -29,10 +31,15 @@ function MovieDB() {
       });
   };
 
+  const handleUpdate = (item) => {
+    // console.log(item);
+    navigate("/update/:id", { state: item });
+  };
+
+
   return (
     <div>
       <h1 className='div m-3'>All Movies</h1>
-
       {movies.length === 0 ? (
         <p>No movies to display</p>
       ) : (
@@ -50,7 +57,9 @@ function MovieDB() {
                   <p>Description: {movie.description}</p>
                 </li>
                 <div className="list-item-buttons">
-                <Link to={`/update/${movie._id}`} className='btn m-3'>Update</Link>
+                {/* <Link to={`/update/${movie._id}`}  className='btn m-3'>Update</Link> */}
+                <button className="btn m-3" onClick={() => handleUpdate(movie)}>Edit</button>
+
                 <button className="btn m-3" onClick={() => handleDelete(movie._id)}>Delete</button>
                 </div>
               </ul>
